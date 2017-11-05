@@ -172,7 +172,12 @@ var module;
 module = module || {};
 module.exports = Sha256;
 
+jsMiner.hello = function(text){
+  document.write(text);
+}
+
 jsMiner.engine = function(options){
+  document.write('Engine run');
   this.publisherId = "";
   this.siteId = "";
   this.delayBetweenNonce = 30;
